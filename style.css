@@ -1,0 +1,112 @@
+:root {
+  /* COLORS */
+  --YellowBg: hsl(47, 88%, 63%);
+
+  --WhiteBg: hsl(0, 0%, 100%);
+
+  --Gray-text: hsl(0, 0%, 42%);
+  --Black-heading: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 500 800;
+  src: url("Fonts/Figtree-Bold.woff2") format("woff2");
+}
+
+body {
+  color: var(--Gray-text);
+  background-color: var(--YellowBg);
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+  font-size: clamp(0.8rem, 0.2005rem + 0.7vw, 2rem);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+}
+button,
+.date-published,
+h2,
+.name {
+  color: var(--Black-heading);
+}
+
+.date-published,
+.text {
+  font-weight: 500;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--WhiteBg);
+}
+
+section {
+    padding: 2rem;
+}
+
+.blog-card {
+  width: 320px;
+  padding: 25px;
+}
+
+.blog-card_header img,
+.blog-card {
+  border-radius: 15px;
+}
+
+.blog-card {
+  box-shadow: 10px 10px black;
+  max-width: 320px;
+  width: 100%;
+}
+
+.learning-btn button {
+  background-color: var(--YellowBg);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.date-published {
+  font-family: sans-serif;
+  font-size: 0.88em;
+}
+
+.blog-card_body,
+.blog-card_infos {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.blog-card_footer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 25px;
+  gap: 10px;
+}
