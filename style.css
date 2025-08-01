@@ -13,7 +13,7 @@
   font-family: "Figtree";
   font-style: normal;
   font-weight: 500 800;
-  src: url("Fonts/Figtree-Bold.woff2") format("woff2");
+  src: url("Figtree-Bold.woff2") format("woff2");
 }
 
 body {
@@ -62,7 +62,7 @@ div {
 }
 
 section {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 .blog-card {
@@ -109,4 +109,8 @@ section {
   flex-direction: row;
   margin-top: 25px;
   gap: 10px;
+}
+
+.FM {
+  color: var(--Black-heading);
 }
